@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<script type="text/javascript" src="eden_stickyNotes.js"></script>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--css-->
+<meta charset="utf-8" http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="eden_stickyNotes.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--nice fonts-->
+<link  href="http://fonts.googleapis.com/css?
+family=Reenie+Beanie:regular" 
+rel="stylesheet"
+type="text/css">
+
+</head>
+
+<body onload="onload=showElementsFromStorage()">
+  <div class="container">
+    <h1>My task board</h1>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-8">
+        <form id="myForm">
+          <input type="text" id="myInput" placeholder="My new note ...">
+          <input type="date" id="dateInput">
+          <input type="time" id="timeInput">
+        </form>
+      </div>
+      <div class="col-sm-1">
+        <button onclick="newElement()" class="addBtn">Add</button><br><br>
+        <button onclick="clearAll()" class="addBtn">Clear</button>
+      </div>
+      <div class="col-sm-2"> </div>
+    </div>
+    <ul id="myUL">
+      <!--space for the notes  -->
+    </ul>
+
+</div>
+</body>
+</html>
